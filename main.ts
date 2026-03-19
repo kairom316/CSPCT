@@ -7,6 +7,9 @@ function displayValues (amount: number) {
         finalSum += list.indexOf(randomValue) + 1
         pause(450)
     }
+    if (score == 0) {
+        game.splash("Goodluck!!!")
+    }
 }
 function checkAnswer (sum: number) {
     if (finalSum == sum) {
